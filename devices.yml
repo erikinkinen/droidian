@@ -47,6 +47,11 @@
     - adaptation-droidian-lavender
     - adaptation-lavender-configs
 
+.samsung_starqlte_packages:
+  packages: &samsung_starqlte_packages
+    - adaptation-droidian-starqlte
+    - adaptation-starqlte-configs
+
 ########################################################################
 # Recovery-flashable rootfses                                          #
 ########################################################################
@@ -181,3 +186,17 @@ xiaomi_lavender:
   apilevel: 28
 
   packages: *xiaomi_lavender_packages
+
+#
+# Samsung
+#
+
+# Samsung Galaxy S9 (Qualcomm) (starqlte)
+samsung_starqlte:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *samsung_starqlte_packages
