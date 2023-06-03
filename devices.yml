@@ -51,6 +51,11 @@
   packages: &xiaomi_angelica_packages
     - adaptation-droidian-angelica
     - adaptation-angelica-configs
+    
+.xiaomi_onclite_packages:
+  packages: &xiaomi_onclite_packages
+    - adaptation-droidian-onclite
+    - adaptation-onclite-configs
 
 .samsung_starqlte_packages:
   packages: &samsung_starqlte_packages
@@ -201,6 +206,16 @@ xiaomi_angelica:
   apilevel: 29
 
   packages: *xiaomi_angelica_packages
+  
+# Xiaomi Redmi 7 (onclite)
+xiaomi_onclite:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 28
+
+  packages: *xiaomi_onclite_packages
 
 #
 # Samsung
