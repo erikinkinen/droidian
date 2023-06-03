@@ -47,6 +47,11 @@
     - adaptation-droidian-lavender
     - adaptation-lavender-configs
 
+.xiaomi_angelica_packages:
+  packages: &xiaomi_angelica_packages
+    - adaptation-droidian-angelica
+    - adaptation-angelica-configs
+
 .samsung_starqlte_packages:
   packages: &samsung_starqlte_packages
     - adaptation-droidian-starqlte
@@ -186,6 +191,16 @@ xiaomi_lavender:
   apilevel: 28
 
   packages: *xiaomi_lavender_packages
+
+# Xiaomi Redmi 9C (angelica)
+xiaomi_angelica:
+  type: image
+  arch: armhf
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *xiaomi_angelica_packages
 
 #
 # Samsung
