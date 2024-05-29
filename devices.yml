@@ -34,7 +34,7 @@
 google_sargo:
   type: image
   arch: arm64
-  edition: phosh
+  edition: [cutie, phosh]
   variant: phone
   apilevel: 28
 
@@ -48,7 +48,7 @@ google_sargo:
 volla_yggdrasil:
   type: image
   arch: arm64
-  edition: phosh
+  edition: [cutie, phosh]
   variant: phone
   apilevel: 28
 
@@ -58,7 +58,7 @@ volla_yggdrasil:
 volla_yggdrasilx:
   type: image
   arch: arm64
-  edition: phosh
+  edition: [cutie, phosh]
   variant: phone
   apilevel: 29
 
@@ -68,8 +68,9 @@ volla_yggdrasilx:
 volla_mimameid:
   type: rootfs
   arch: arm64
-  edition: phosh
+  edition: [cutie, phosh]
   variant: phone
   apilevel: 30
 
   packages: *volla_mimameid_packages
+
