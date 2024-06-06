@@ -12,6 +12,11 @@
     - adaptation-volla-mimameid
     - adaptation-volla-mimameid-configs
 
+.volla_vidofnir_packages:
+  packages: &volla_vidofnir_packages
+    - adaptation-droidian-vidofnir
+    - adaptation-vidofnir-configs
+
 .volla_yggdrasil_packages:
   packages: &volla_yggdrasil_packages
     - adaptation-volla-yggdrasil
@@ -73,4 +78,14 @@ volla_mimameid:
   apilevel: 30
 
   packages: *volla_mimameid_packages
+
+# Volla Phone X23 (vidofnir)
+volla_vidofnir:
+  type: rootfs
+  arch: arm64
+  edition: [cutie, phosh]
+  variant: phone
+  apilevel: 32
+
+  packages: *volla_vidofnir_packages
 
