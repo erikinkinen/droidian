@@ -23,6 +23,7 @@ You should pick up the correct zipfile for your specific device:
 * Device with an Android 11 vendor: api30
 * Device with an Android 12/12.1 vendor: api32
 * Device with an Android 13 vendor: api33
+* Device with an Android 14 vendor: api34
 
 If you're in doubt, and there is a fastboot-flashable image available for your device, it's recommended to use that.
 
